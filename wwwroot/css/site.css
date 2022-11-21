@@ -24,13 +24,6 @@ body {
     font-size: 25px;
 }
 
-.snack *{
-    font-size: 18px;
-}
-.snack h4{
-    font-size: 22px;
-}
-
 .home a{
     font-size: 32px;
     display: flex;
@@ -57,6 +50,22 @@ body {
 /*SNACK PAGE*/
 .snack_page{
     margin-left: 20px;
+}
+
+.snack_page .col .card{
+    height: 380px;
+    margin-top: 50px;
+}
+
+.home_btn{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home_btn a{
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
 }
 /*PIZZE INDEX*/
 .pizze_index .col {
