@@ -54,26 +54,31 @@ body {
 .layout_home ul li{
     padding-left: 18px;
 }
+/*SNACK PAGE*/
+.snack_page{
+    margin-left: 20px;
+}
 /*PIZZE INDEX*/
-.pizze_index col {
+.pizze_index .col {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 300px;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 350px;
     flex-grow: 0;
+    height: 400px;
 }
 
-.pizze_index .pizza_card hr {
+.pizze_index .pizza_card span.line {
     width: 300px;
-    margin: 0.5rem auto;
     height: 1px;
-    color: black;
+    background-color: black;
 }
 .pizze_index .pizza_card h3 {
     margin-bottom: 0;
 }
 .pizze_index .pizza_card span {
     display: block;
+    margin-bottom: 0.5rem;
 }
 
 .pizze_index .pizza_card .price {

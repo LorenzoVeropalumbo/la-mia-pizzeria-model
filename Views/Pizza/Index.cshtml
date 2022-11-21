@@ -1,6 +1,6 @@
 ﻿@model List<Pizza>
 <div class="container-fluid text-center pizze_index">
-    <div class="row justify-content-start g-4">
+    <div class="row g-4">
         @foreach (Pizza pizza in Model)
         {
             <div class="col">
@@ -15,7 +15,7 @@
                             <i class="fa-solid fa-star"></i>    
                         }
                     </span>
-                    <hr />
+                    <span class="line" />
                     <h3>@pizza.Title</h3>
                     <p><span class="price">$@pizza.Price</span></p>
                     <a href="@Url.Action("Detail",new {id = pizza.Id})" class="btn btn-danger">Visualizza dettagli</a>
