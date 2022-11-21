@@ -10,6 +10,7 @@
                     <hr />
                     <h3>@pizza.Title</h3>
                     <p><span>$@pizza.Price</span></p>
+                    <a href="@Url.Action("Detail",new {id = pizza.Id})" class="btn btn-danger">Visualizza dettagli</a>
                 </div>
             </div>  
         }
