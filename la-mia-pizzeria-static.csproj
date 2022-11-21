@@ -8,6 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Nuova cartella1\**" />
+    <Compile Remove="Views\Nuova cartella\**" />
+    <Content Remove="Views\Nuova cartella1\**" />
+    <Content Remove="Views\Nuova cartella\**" />
+    <EmbeddedResource Remove="Views\Nuova cartella1\**" />
+    <EmbeddedResource Remove="Views\Nuova cartella\**" />
+    <None Remove="Views\Nuova cartella1\**" />
+    <None Remove="Views\Nuova cartella\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Models\Class.cs" />
   </ItemGroup>
 
@@ -17,6 +28,11 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0" />
   </ItemGroup>
 
 </Project>

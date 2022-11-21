@@ -1,0 +1,17 @@
+﻿@model List<Pizza>
+<div class="container-fluid text-center pizze_index">
+    <div class="row justify-content-start g-4">
+        @foreach (Pizza pizza in Model)
+        {
+            <div class="col">
+                <div class="pizza_card">
+                    <a href="@Url.Action("Detail",new {id = pizza.Id})"><img src="@pizza.Image" /></a>
+                    <span>Stelle</span>
+                    <hr />
+                    <h3>@pizza.Title</h3>
+                    <p><span>$@pizza.Price</span></p>
+                </div>
+            </div>  
+        }
+    </div>
+</div>
