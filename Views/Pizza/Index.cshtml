@@ -6,10 +6,18 @@
             <div class="col">
                 <div class="pizza_card">
                     <a href="@Url.Action("Detail",new {id = pizza.Id})"><img src="@pizza.Image" /></a>
-                    <span>Stelle</span>
+                    @{
+                        int count = new Random().Next(1, 6);
+                    }
+                    <span>
+                        @for (int i = 0; i < count; i++)
+                        {
+                            <i class="fa-solid fa-star"></i>    
+                        }
+                    </span>
                     <hr />
                     <h3>@pizza.Title</h3>
-                    <p><span>$@pizza.Price</span></p>
+                    <p><span class="price">$@pizza.Price</span></p>
                     <a href="@Url.Action("Detail",new {id = pizza.Id})" class="btn btn-danger">Visualizza dettagli</a>
                 </div>
             </div>  

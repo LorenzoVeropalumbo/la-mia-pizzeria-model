@@ -76,4 +76,13 @@ body {
     display: block;
 }
 
+.pizze_index .pizza_card .price {
+    font-size: 22px;
+    font-weight: 700;
+    color: firebrick;
+}
+
+.pizze_index .pizza_card i {
+    color: orange;
+}
 
